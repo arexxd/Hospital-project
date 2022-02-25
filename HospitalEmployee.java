@@ -20,5 +20,5 @@ public abstract class HospitalEmployee {
     {
        return "Employee" + name + "Employee ID" + id; 
     }
-abstract public String
+abstract public String work();
 }
