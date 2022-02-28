@@ -19,11 +19,7 @@ public abstract class HospitalEmployee {
         return id;
     }
 
-    public String getJob()
-    {
-        return name+" is a the "+id;
-    }
-    public String toString()
+    @Override public String toString()
     {
        return "Employee" + name + "Employee ID" + id; 
     }
