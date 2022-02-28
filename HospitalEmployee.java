@@ -10,10 +10,25 @@ public class Driver
         System.out.println(nurse.work());
         System.out.println(nurse.quote());
 
-        Administrator admin = new Administrator("")
+        Administrator admin = new Administrator("Jeleel White", "Administrator");
+        System.out.println(admin.work());
+        System.out.println(admin.quote());
+
+        Janitor jan = new Janitor("Michael Huang", "Janitor");
+        System.out.println(jan.work());
+        System.out.println(jan.quote());
+
+        Receptionist rec = new Receptionist("Jenny Yan", "Receptionist");
+        System.out.println(rec.work());
+        System.out.println(rec.quote());
+
+        Surgeon surg = new Surgeon("Nigo Cudi", "Surgeon");
+        System.out.println(surg.work());
+        System.out.println(surg.quote());
+
     }
 }
-public abstract class HospitalEmployee {
+abstract class HospitalEmployee {
     private String name, id;
     
     public HospitalEmployee(String employeename, String  employeeid)
