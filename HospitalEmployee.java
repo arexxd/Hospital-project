@@ -39,7 +39,7 @@ class Doctor extends HospitalEmployee{
     }
     public String work()
     {
-        return "I am a "+id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -55,7 +55,7 @@ class Nurse extends HospitalEmployee{
     }
     public String work()
     {
-        return "I am a "+id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -71,7 +71,7 @@ class Administrator extends HospitalEmployee{
     }
     public String work()
     {
-        return "I am a "+id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -87,7 +87,7 @@ class Janitor extends Administrator{
     }
     public String work()
     {
-        return "I am a "+id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -103,10 +103,26 @@ class Receptionist extends Administrator{
     }
     public String work()
     {
-        return "I am a "+id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
-        return "\"Someone ask me, if I were stranded on a deset island what book would I bring...How to build a boat\" -Steven Wright";
+        return "\"Someone asked me, if I were stranded on a deset island what book would I bring...How to build a boat\" -Steven Wright";
+    }
+}
+class Surgeon extends Doctor{
+    private String name, id;
+    public Surgeon(String name, String id){
+        super(name,id);
+        this.name = name;
+        this.id = id;
+    }
+    public String work()
+    {
+        return "My name is " + name + "I am a " + id;
+    }
+    public String quote()
+    {
+        return "\"Good resolutions are simply checks that men draw on a bank where they have no account.\" -Oscar Wilde";
     }
 }
