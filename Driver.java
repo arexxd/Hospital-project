@@ -63,7 +63,7 @@ class Doctor extends HospitalEmployee{
     }
     public String work()
     {
-        return "My name is " + name + "I am a " + id;
+        return "My name is " + name + ", I am a " + id;
     }
     public String quote()
     {
@@ -79,7 +79,7 @@ class Nurse extends HospitalEmployee{
     }
     public String work()
     {
-        return "My name is " + name + "I am a " + id;
+        return "My name is " + name + ", I am a " + id;
     }
     public String quote()
     {
@@ -95,7 +95,7 @@ class Administrator extends HospitalEmployee{
     }
     public String work()
     {
-        return "My name is " + name + "I am a " + id;
+        return "My name is " + name + ", I am a " + id;
     }
     public String quote()
     {
@@ -111,7 +111,7 @@ class Janitor extends Administrator{
     }
     public String work()
     {
-        return "My name is " + name + "I am a " + id;
+        return "My name is " + name + ", I am a " + id;
     }
     public String quote()
     {
@@ -127,7 +127,7 @@ class Receptionist extends Administrator{
     }
     public String work()
     {
-        return "My name is " + name + "I am a " + id;
+        return "My name is " + name + ", I am a " + id;
     }
     public String quote()
     {
@@ -143,7 +143,7 @@ class Surgeon extends Doctor{
     }
     public String work()
     {
-        return "My name is " + name + "I am a " + id;
+        return "My name is " + name + ", I am a " + id;
     }
     public String quote()
     {
