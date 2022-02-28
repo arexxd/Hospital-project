@@ -1,11 +1,19 @@
 public class Driver
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
+        Doctor doc = new Doctor("Joe Chung", "Doctor");
+        System.out.println(doc.work());
+        System.out.println(doc.quote());
         
+        Nurse nurse = new Nurse("Mike Dean", "Nurse");
+        System.out.println(nurse.work());
+        System.out.println(nurse.quote());
+
+        Administrator admin = new Administrator("")
     }
 }
-abstract class HospitalEmployee {
+public abstract class HospitalEmployee {
     private String name, id;
     
     public HospitalEmployee(String employeename, String  employeeid)
