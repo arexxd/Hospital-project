@@ -94,3 +94,19 @@ class Janitor extends Administrator{
         return "\"People say nothing is impossible but I do nothing every day.\"";
     }
 }
+class Receptionist extends Administrator{
+    private String name, id;
+    public Receptionist(String name, String id){
+        super(name,id);
+        this.name = name;
+        this.id = id;
+    }
+    public String work()
+    {
+        return "I am a "+id;
+    }
+    public String quote()
+    {
+        return "\"Someone ask me, if I were stranded on a deset island what book would I bring...How to build a boat\" -Steven Wright";
+    }
+}
