@@ -1,6 +1,11 @@
-import org.w3c.dom.NameList;
-
-public abstract class HospitalEmployee {
+public class Driver
+{
+    public static void main(String[] args) 
+    {
+        
+    }
+}
+abstract class HospitalEmployee {
     private String name, id;
     
     public HospitalEmployee(String employeename, String  employeeid)
