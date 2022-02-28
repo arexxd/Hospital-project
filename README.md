@@ -1,2 +1,2 @@
 # Hospital-project
-Alex Wu
+Alex Wu for AP Computer Science
