@@ -1,34 +1,36 @@
-public class Driver
+import org.w3c.dom.NameList;
+public class Doctor
 {
-    public static void main(String[] args)
-    {
-        Doctor doc = new Doctor("Joe Chung", "Doctor");
-        System.out.println(doc.work());
-        System.out.println(doc.quote());
-        
-        Nurse nurse = new Nurse("Mike Dean", "Nurse");
-        System.out.println(nurse.work());
-        System.out.println(nurse.quote());
-
-        Administrator admin = new Administrator("Jeleel White", "Administrator");
-        System.out.println(admin.work());
-        System.out.println(admin.quote());
-
-        Janitor jan = new Janitor("Michael Huang", "Janitor");
-        System.out.println(jan.work());
-        System.out.println(jan.quote());
-
-        Receptionist rec = new Receptionist("Jenny Yan", "Receptionist");
-        System.out.println(rec.work());
-        System.out.println(rec.quote());
-
-        Surgeon surg = new Surgeon("Nigo Cudi", "Surgeon");
-        System.out.println(surg.work());
-        System.out.println(surg.quote());
-
-    }
+    Doc = new Doctor("Kareem Abdul", "Doctor")
+    Doc.work();
+    Doc.quote();
 }
-abstract class HospitalEmployee {
+public class Nurse
+{
+    nurse = new Nurse("Mike Dean", "Nurse")
+    nurse.work();
+    nurse.quote();
+}
+public class Administrator
+{
+    admin = new Administrator("Frank Wright", "Administrator")
+    admin.work();
+    admin.quote();
+}
+public class Janitor
+{
+    jan = new Janitor("David Sohn", "Janitor")
+    jan.work();
+    jan.quote();
+}
+public class Receptionist
+{
+    rec = new Receptionist("Jenny Yan", "Receptionist")
+    rec.work();
+    rec.quote();
+}
+public class 
+public abstract class HospitalEmployee {
     private String name, id;
     
     public HospitalEmployee(String employeename, String  employeeid)
@@ -58,12 +60,12 @@ class Doctor extends HospitalEmployee{
     private String name, id;     
     public Doctor(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
+        name = name;
+        id = id;
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -79,7 +81,7 @@ class Nurse extends HospitalEmployee{
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -95,7 +97,7 @@ class Administrator extends HospitalEmployee{
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -111,7 +113,7 @@ class Janitor extends Administrator{
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -127,7 +129,7 @@ class Receptionist extends Administrator{
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
@@ -143,7 +145,7 @@ class Surgeon extends Doctor{
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + name + "I am a " + id;
     }
     public String quote()
     {
