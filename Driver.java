@@ -47,7 +47,7 @@ abstract class HospitalEmployee {
         return id;
     }
 
-    @Override public String toString()
+    public String toString()
     {
        return "Employee" + name + "Employee ID" + id; 
     }
@@ -58,8 +58,6 @@ class Doctor extends HospitalEmployee{
     private String name, id;     
     public Doctor(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
     }
     public String work()
     {
@@ -74,8 +72,6 @@ class Nurse extends HospitalEmployee{
     private String name, id;     
     public Nurse(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
     }
     public String work()
     {
@@ -90,8 +86,6 @@ class Administrator extends HospitalEmployee{
     private String name, id;     
     public Administrator(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
     }
     public String work()
     {
@@ -106,8 +100,6 @@ class Janitor extends Administrator{
     private String name, id;
     public Janitor(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
     }
     public String work()
     {
@@ -122,8 +114,6 @@ class Receptionist extends Administrator{
     private String name, id;
     public Receptionist(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
     }
     public String work()
     {
@@ -138,8 +128,6 @@ class Surgeon extends Doctor{
     private String name, id;
     public Surgeon(String name, String id){
         super(name,id);
-        this.name = name;
-        this.id = id;
     }
     public String work()
     {
