@@ -55,41 +55,38 @@ abstract public String work();
 abstract public String quote();
 }
 class Doctor extends HospitalEmployee{
-    private String name, id;     
     public Doctor(String name, String id){
         super(name,id);
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + getName() + ", I am a " + getid();
     }
     public String quote()
     {
         return "\"I'm not superstitious, but I am a little stitious\" -Steve Carrell";
     }  
 }
-class Nurse extends HospitalEmployee{
-    private String name, id;     
+class Nurse extends HospitalEmployee{   
     public Nurse(String name, String id){
         super(name,id);
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + getName() + ", I am a " + getid();
     }
     public String quote()
     {
         return "\"Why do they call it rush hour when nothing moves?\" -Robin Williams";
     }  
 }
-class Administrator extends HospitalEmployee{
-    private String name, id;     
+class Administrator extends HospitalEmployee{   
     public Administrator(String name, String id){
         super(name,id);
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + getName() + ", I am a " + getid();
     }
     public String quote()
     {
@@ -97,13 +94,12 @@ class Administrator extends HospitalEmployee{
     }  
 }
 class Janitor extends Administrator{
-    private String name, id;
     public Janitor(String name, String id){
         super(name,id);
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + getName() + ", I am a " + getid();
     }
     public String quote()
     {
@@ -111,13 +107,12 @@ class Janitor extends Administrator{
     }
 }
 class Receptionist extends Administrator{
-    private String name, id;
     public Receptionist(String name, String id){
         super(name,id);
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + getName() + ", I am a " + getid();
     }
     public String quote()
     {
@@ -125,13 +120,12 @@ class Receptionist extends Administrator{
     }
 }
 class Surgeon extends Doctor{
-    private String name, id;
     public Surgeon(String name, String id){
         super(name,id);
     }
     public String work()
     {
-        return "My name is " + name + ", I am a " + id;
+        return "My name is " + getName() + ", I am a " + getid();
     }
     public String quote()
     {
